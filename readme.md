@@ -1,5 +1,7 @@
 # COPD Exacerbation Risk Prediction
 
+# COPD Exacerbation Risk Prediction
+
 ## Project Description
 
 This project implements a machine learning pipeline to predict the risk of COPD exacerbation based on a synthetic dataset. The pipeline includes data loading, exploratory data analysis (EDA), data preprocessing, training and hyperparameter tuning of multiple classification models, model evaluation, and feature importance analysis.
