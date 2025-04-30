@@ -21,9 +21,9 @@ To set up and run this project, you need to have Python installed. It is recomme
     _(Note: Assuming the user is already in the project directory /Users/akshaypulla/Desktop/COPD)_
 
 2.  **Install dependencies:**
-    Navigate to the project directory and install the required libraries using pip:
+    Navigate to the project directory and install the required libraries using pip. The necessary libraries are listed in `requirements.txt`.
     ```bash
-    pip install pandas numpy scikit-learn matplotlib seaborn
+    pip install -r requirements.txt
     ```
 
 ## Usage
@@ -48,6 +48,22 @@ To set up and run this project, you need to have Python installed. It is recomme
     - Select the best performing model based on the weighted F1 score.
     - Save the fitted preprocessor and the best performing model to the `output_models` directory.
     - Generate a `copd_analysis_report.md` file in the `output_models` directory summarizing the process and results.
+
+3.  **Run the Streamlit application:**
+    After running the analysis script and ensuring the model and preprocessor files are generated, you can run the interactive UI:
+
+    ```bash
+    streamlit run app.py
+    ```
+
+    This will open the application in your web browser, allowing you to input patient data and get a risk prediction.
+
+### Application Frontend
+
+Here are screenshots of the Streamlit application frontend:
+
+![UI Screenshot 1](UI-1.png)
+![UI Screenshot 2](UI-2.png)
 
 ## Features
 
